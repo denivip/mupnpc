@@ -46,7 +46,8 @@
 {
 	if (!cObject)
 		return nil;
-	return [[[NSString alloc] initWithUTF8String:cg_upnp_statevariable_getvalue(cObject)] autorelease];
+    const char *value = cg_upnp_statevariable_getvalue(cObject);
+	return value == NULL ? nil : [[[NSString alloc] initWithUTF8String:value] autorelease];
 }
 
 - (NSArray *)allowedValues
