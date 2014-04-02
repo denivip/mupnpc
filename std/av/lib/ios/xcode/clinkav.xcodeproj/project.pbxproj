@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E35A2A0018EC2DD9009B6C06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35A29FF18EC2DD9009B6C06 /* Foundation.framework */; };
+		E35A2A4118EC2E4E009B6C06 /* ccontent_list.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A2F18EC2E4E009B6C06 /* ccontent_list.c */; };
+		E35A2A4218EC2E4E009B6C06 /* ccontent.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3018EC2E4E009B6C06 /* ccontent.c */; };
+		E35A2A4318EC2E4E009B6C06 /* cdidl.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3118EC2E4E009B6C06 /* cdidl.c */; };
+		E35A2A4418EC2E4E009B6C06 /* cmd5.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3218EC2E4E009B6C06 /* cmd5.c */; };
+		E35A2A4518EC2E4E009B6C06 /* cprotocolinfo_list.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3318EC2E4E009B6C06 /* cprotocolinfo_list.c */; };
+		E35A2A4618EC2E4E009B6C06 /* cprotocolinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3418EC2E4E009B6C06 /* cprotocolinfo.c */; };
+		E35A2A4718EC2E4E009B6C06 /* cresource_data.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3518EC2E4E009B6C06 /* cresource_data.c */; };
+		E35A2A4818EC2E4E009B6C06 /* cresource_list.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3618EC2E4E009B6C06 /* cresource_list.c */; };
+		E35A2A4918EC2E4E009B6C06 /* cresource.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3718EC2E4E009B6C06 /* cresource.c */; };
+		E35A2A4A18EC2E4E009B6C06 /* cavtransport_service.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3918EC2E4E009B6C06 /* cavtransport_service.c */; };
+		E35A2A4B18EC2E4E009B6C06 /* cconnectionmgrr_service.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3A18EC2E4E009B6C06 /* cconnectionmgrr_service.c */; };
+		E35A2A4C18EC2E4E009B6C06 /* cmediarenderer_device.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3B18EC2E4E009B6C06 /* cmediarenderer_device.c */; };
+		E35A2A4D18EC2E4E009B6C06 /* crenderingcontrol_service.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3C18EC2E4E009B6C06 /* crenderingcontrol_service.c */; };
+		E35A2A4E18EC2E4E009B6C06 /* cconnectionmgr_service.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3E18EC2E4E009B6C06 /* cconnectionmgr_service.c */; };
+		E35A2A4F18EC2E4E009B6C06 /* ccontentdir_service.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A3F18EC2E4E009B6C06 /* ccontentdir_service.c */; };
+		E35A2A5018EC2E4E009B6C06 /* cmediaserver_device.c in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A4018EC2E4E009B6C06 /* cmediaserver_device.c */; };
+		E35A2A7018EC2FBA009B6C06 /* CGUpnpAvContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A5618EC2FBA009B6C06 /* CGUpnpAvContainer.m */; };
+		E35A2A7118EC2FBA009B6C06 /* CGUpnpAvContentDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A5818EC2FBA009B6C06 /* CGUpnpAvContentDirectory.m */; };
+		E35A2A7218EC2FBA009B6C06 /* CGUpnpAvContentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A5A18EC2FBA009B6C06 /* CGUpnpAvContentManager.m */; };
+		E35A2A7318EC2FBA009B6C06 /* CGUpnpAvController.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A5C18EC2FBA009B6C06 /* CGUpnpAvController.m */; };
+		E35A2A7418EC2FBA009B6C06 /* CGUpnpAvItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A5E18EC2FBA009B6C06 /* CGUpnpAvItem.m */; };
+		E35A2A7518EC2FBA009B6C06 /* CGUpnpAvObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A6018EC2FBA009B6C06 /* CGUpnpAvObject.m */; };
+		E35A2A7618EC2FBA009B6C06 /* CGUpnpAVPositionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A6218EC2FBA009B6C06 /* CGUpnpAVPositionInfo.m */; };
+		E35A2A7718EC2FBA009B6C06 /* CGUpnpAvRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A6418EC2FBA009B6C06 /* CGUpnpAvRenderer.m */; };
+		E35A2A7818EC2FBA009B6C06 /* CGUpnpAvResource.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A6618EC2FBA009B6C06 /* CGUpnpAvResource.m */; };
+		E35A2A7918EC2FBA009B6C06 /* CGUpnpAvRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A6818EC2FBA009B6C06 /* CGUpnpAvRoot.m */; };
+		E35A2A7A18EC2FBA009B6C06 /* CGUpnpAvServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A6A18EC2FBA009B6C06 /* CGUpnpAvServer.m */; };
+		E35A2A7B18EC2FBA009B6C06 /* CGXml.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A6C18EC2FBA009B6C06 /* CGXml.m */; };
+		E35A2A7C18EC2FBA009B6C06 /* CGXmlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E35A2A6E18EC2FBA009B6C06 /* CGXmlNode.m */; };
+		E35A2A8118EC3067009B6C06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35A2A7D18EC3042009B6C06 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E35A29FA18EC2DD9009B6C06 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E35A29FC18EC2DD9009B6C06 /* libclinkav.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclinkav.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E35A29FF18EC2DD9009B6C06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E35A2A0318EC2DD9009B6C06 /* clinkav-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "clinkav-Prefix.pch"; sourceTree = "<group>"; };
+		E35A2A2718EC2E24009B6C06 /* ccontent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ccontent.h; path = ../../../../include/cybergarage/upnp/std/av/ccontent.h; sourceTree = "<group>"; };
+		E35A2A2818EC2E24009B6C06 /* cdidl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cdidl.h; path = ../../../../include/cybergarage/upnp/std/av/cdidl.h; sourceTree = "<group>"; };
+		E35A2A2918EC2E24009B6C06 /* cmd5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmd5.h; path = ../../../../include/cybergarage/upnp/std/av/cmd5.h; sourceTree = "<group>"; };
+		E35A2A2A18EC2E24009B6C06 /* cmediarenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmediarenderer.h; path = ../../../../include/cybergarage/upnp/std/av/cmediarenderer.h; sourceTree = "<group>"; };
+		E35A2A2B18EC2E24009B6C06 /* cmediaserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmediaserver.h; path = ../../../../include/cybergarage/upnp/std/av/cmediaserver.h; sourceTree = "<group>"; };
+		E35A2A2C18EC2E24009B6C06 /* cprotocolinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cprotocolinfo.h; path = ../../../../include/cybergarage/upnp/std/av/cprotocolinfo.h; sourceTree = "<group>"; };
+		E35A2A2D18EC2E24009B6C06 /* cresource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cresource.h; path = ../../../../include/cybergarage/upnp/std/av/cresource.h; sourceTree = "<group>"; };
+		E35A2A2E18EC2E24009B6C06 /* cupnpav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cupnpav.h; path = ../../../../include/cybergarage/upnp/std/av/cupnpav.h; sourceTree = "<group>"; };
+		E35A2A2F18EC2E4E009B6C06 /* ccontent_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccontent_list.c; path = ../../../../src/cybergarage/upnp/std/av/ccontent_list.c; sourceTree = "<group>"; };
+		E35A2A3018EC2E4E009B6C06 /* ccontent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccontent.c; path = ../../../../src/cybergarage/upnp/std/av/ccontent.c; sourceTree = "<group>"; };
+		E35A2A3118EC2E4E009B6C06 /* cdidl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cdidl.c; path = ../../../../src/cybergarage/upnp/std/av/cdidl.c; sourceTree = "<group>"; };
+		E35A2A3218EC2E4E009B6C06 /* cmd5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmd5.c; path = ../../../../src/cybergarage/upnp/std/av/cmd5.c; sourceTree = "<group>"; };
+		E35A2A3318EC2E4E009B6C06 /* cprotocolinfo_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cprotocolinfo_list.c; path = ../../../../src/cybergarage/upnp/std/av/cprotocolinfo_list.c; sourceTree = "<group>"; };
+		E35A2A3418EC2E4E009B6C06 /* cprotocolinfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cprotocolinfo.c; path = ../../../../src/cybergarage/upnp/std/av/cprotocolinfo.c; sourceTree = "<group>"; };
+		E35A2A3518EC2E4E009B6C06 /* cresource_data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cresource_data.c; path = ../../../../src/cybergarage/upnp/std/av/cresource_data.c; sourceTree = "<group>"; };
+		E35A2A3618EC2E4E009B6C06 /* cresource_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cresource_list.c; path = ../../../../src/cybergarage/upnp/std/av/cresource_list.c; sourceTree = "<group>"; };
+		E35A2A3718EC2E4E009B6C06 /* cresource.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cresource.c; path = ../../../../src/cybergarage/upnp/std/av/cresource.c; sourceTree = "<group>"; };
+		E35A2A3918EC2E4E009B6C06 /* cavtransport_service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cavtransport_service.c; sourceTree = "<group>"; };
+		E35A2A3A18EC2E4E009B6C06 /* cconnectionmgrr_service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cconnectionmgrr_service.c; sourceTree = "<group>"; };
+		E35A2A3B18EC2E4E009B6C06 /* cmediarenderer_device.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmediarenderer_device.c; sourceTree = "<group>"; };
+		E35A2A3C18EC2E4E009B6C06 /* crenderingcontrol_service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crenderingcontrol_service.c; sourceTree = "<group>"; };
+		E35A2A3E18EC2E4E009B6C06 /* cconnectionmgr_service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cconnectionmgr_service.c; sourceTree = "<group>"; };
+		E35A2A3F18EC2E4E009B6C06 /* ccontentdir_service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ccontentdir_service.c; sourceTree = "<group>"; };
+		E35A2A4018EC2E4E009B6C06 /* cmediaserver_device.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmediaserver_device.c; sourceTree = "<group>"; };
+		E35A2A5418EC2FBA009B6C06 /* CGUpnpAvConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUpnpAvConstants.h; path = ../../../wrapper/objc/CyberLink/CGUpnpAvConstants.h; sourceTree = "<group>"; };
+		E35A2A5518EC2FBA009B6C06 /* CGUpnpAvContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUpnpAvContainer.h; path = ../../../wrapper/objc/CyberLink/CGUpnpAvContainer.h; sourceTree = "<group>"; };
+		E35A2A5618EC2FBA009B6C06 /* CGUpnpAvContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGUpnpAvContainer.m; path = ../../../wrapper/objc/CyberLink/CGUpnpAvContainer.m; sourceTree = "<group>"; };
+		E35A2A5718EC2FBA009B6C06 /* CGUpnpAvContentDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUpnpAvContentDirectory.h; path = ../../../wrapper/objc/CyberLink/CGUpnpAvContentDirectory.h; sourceTree = "<group>"; };
+		E35A2A5818EC2FBA009B6C06 /* CGUpnpAvContentDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGUpnpAvContentDirectory.m; path = ../../../wrapper/objc/CyberLink/CGUpnpAvContentDirectory.m; sourceTree = "<group>"; };
+		E35A2A5918EC2FBA009B6C06 /* CGUpnpAvContentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUpnpAvContentManager.h; path = ../../../wrapper/objc/CyberLink/CGUpnpAvContentManager.h; sourceTree = "<group>"; };
+		E35A2A5A18EC2FBA009B6C06 /* CGUpnpAvContentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGUpnpAvContentManager.m; path = ../../../wrapper/objc/CyberLink/CGUpnpAvContentManager.m; sourceTree = "<group>"; };
+		E35A2A5B18EC2FBA009B6C06 /* CGUpnpAvController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUpnpAvController.h; path = ../../../wrapper/objc/CyberLink/CGUpnpAvController.h; sourceTree = "<group>"; };
+		E35A2A5C18EC2FBA009B6C06 /* CGUpnpAvController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGUpnpAvController.m; path = ../../../wrapper/objc/CyberLink/CGUpnpAvController.m; sourceTree = "<group>"; };
+		E35A2A5D18EC2FBA009B6C06 /* CGUpnpAvItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUpnpAvItem.h; path = ../../../wrapper/objc/CyberLink/CGUpnpAvItem.h; sourceTree = "<group>"; };
+		E35A2A5E18EC2FBA009B6C06 /* CGUpnpAvItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGUpnpAvItem.m; path = ../../../wrapper/objc/CyberLink/CGUpnpAvItem.m; sourceTree = "<group>"; };
+		E35A2A5F18EC2FBA009B6C06 /* CGUpnpAvObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUpnpAvObject.h; path = ../../../wrapper/objc/CyberLink/CGUpnpAvObject.h; sourceTree = "<group>"; };
+		E35A2A6018EC2FBA009B6C06 /* CGUpnpAvObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGUpnpAvObject.m; path = ../../../wrapper/objc/CyberLink/CGUpnpAvObject.m; sourceTree = "<group>"; };
+		E35A2A6118EC2FBA009B6C06 /* CGUpnpAVPositionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUpnpAVPositionInfo.h; path = ../../../wrapper/objc/CyberLink/CGUpnpAVPositionInfo.h; sourceTree = "<group>"; };
+		E35A2A6218EC2FBA009B6C06 /* CGUpnpAVPositionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGUpnpAVPositionInfo.m; path = ../../../wrapper/objc/CyberLink/CGUpnpAVPositionInfo.m; sourceTree = "<group>"; };
+		E35A2A6318EC2FBA009B6C06 /* CGUpnpAvRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUpnpAvRenderer.h; path = ../../../wrapper/objc/CyberLink/CGUpnpAvRenderer.h; sourceTree = "<group>"; };
+		E35A2A6418EC2FBA009B6C06 /* CGUpnpAvRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGUpnpAvRenderer.m; path = ../../../wrapper/objc/CyberLink/CGUpnpAvRenderer.m; sourceTree = "<group>"; };
+		E35A2A6518EC2FBA009B6C06 /* CGUpnpAvResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUpnpAvResource.h; path = ../../../wrapper/objc/CyberLink/CGUpnpAvResource.h; sourceTree = "<group>"; };
+		E35A2A6618EC2FBA009B6C06 /* CGUpnpAvResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGUpnpAvResource.m; path = ../../../wrapper/objc/CyberLink/CGUpnpAvResource.m; sourceTree = "<group>"; };
+		E35A2A6718EC2FBA009B6C06 /* CGUpnpAvRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUpnpAvRoot.h; path = ../../../wrapper/objc/CyberLink/CGUpnpAvRoot.h; sourceTree = "<group>"; };
+		E35A2A6818EC2FBA009B6C06 /* CGUpnpAvRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGUpnpAvRoot.m; path = ../../../wrapper/objc/CyberLink/CGUpnpAvRoot.m; sourceTree = "<group>"; };
+		E35A2A6918EC2FBA009B6C06 /* CGUpnpAvServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUpnpAvServer.h; path = ../../../wrapper/objc/CyberLink/CGUpnpAvServer.h; sourceTree = "<group>"; };
+		E35A2A6A18EC2FBA009B6C06 /* CGUpnpAvServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGUpnpAvServer.m; path = ../../../wrapper/objc/CyberLink/CGUpnpAvServer.m; sourceTree = "<group>"; };
+		E35A2A6B18EC2FBA009B6C06 /* CGXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGXml.h; path = ../../../wrapper/objc/CyberLink/CGXml.h; sourceTree = "<group>"; };
+		E35A2A6C18EC2FBA009B6C06 /* CGXml.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGXml.m; path = ../../../wrapper/objc/CyberLink/CGXml.m; sourceTree = "<group>"; };
+		E35A2A6D18EC2FBA009B6C06 /* CGXmlNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGXmlNode.h; path = ../../../wrapper/objc/CyberLink/CGXmlNode.h; sourceTree = "<group>"; };
+		E35A2A6E18EC2FBA009B6C06 /* CGXmlNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGXmlNode.m; path = ../../../wrapper/objc/CyberLink/CGXmlNode.m; sourceTree = "<group>"; };
+		E35A2A6F18EC2FBA009B6C06 /* UPnPAV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UPnPAV.h; path = ../../../wrapper/objc/CyberLink/UPnPAV.h; sourceTree = "<group>"; };
+		E35A2A7D18EC3042009B6C06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E35A2A7F18EC304E009B6C06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E35A29F918EC2DD9009B6C06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E35A2A8118EC3067009B6C06 /* CoreGraphics.framework in Frameworks */,
+				E35A2A0018EC2DD9009B6C06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E35A29F318EC2DD9009B6C06 = {
+			isa = PBXGroup;
+			children = (
+				E35A2A0118EC2DD9009B6C06 /* clinkav */,
+				E35A2A5318EC2F8A009B6C06 /* clinkobjc */,
+				E35A2A0218EC2DD9009B6C06 /* Other Sources */,
+				E35A29FE18EC2DD9009B6C06 /* Frameworks */,
+				E35A29FD18EC2DD9009B6C06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E35A29FD18EC2DD9009B6C06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E35A29FC18EC2DD9009B6C06 /* libclinkav.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E35A29FE18EC2DD9009B6C06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E35A2A7F18EC304E009B6C06 /* UIKit.framework */,
+				E35A2A7D18EC3042009B6C06 /* CoreGraphics.framework */,
+				E35A29FF18EC2DD9009B6C06 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E35A2A0118EC2DD9009B6C06 /* clinkav */ = {
+			isa = PBXGroup;
+			children = (
+				E35A2A2518EC2E10009B6C06 /* Headers */,
+				E35A2A2618EC2E16009B6C06 /* Sources */,
+			);
+			path = clinkav;
+			sourceTree = "<group>";
+		};
+		E35A2A0218EC2DD9009B6C06 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E35A2A0318EC2DD9009B6C06 /* clinkav-Prefix.pch */,
+			);
+			name = "Other Sources";
+			path = clinkav;
+			sourceTree = "<group>";
+		};
+		E35A2A2518EC2E10009B6C06 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				E35A2A2718EC2E24009B6C06 /* ccontent.h */,
+				E35A2A2818EC2E24009B6C06 /* cdidl.h */,
+				E35A2A2918EC2E24009B6C06 /* cmd5.h */,
+				E35A2A2A18EC2E24009B6C06 /* cmediarenderer.h */,
+				E35A2A2B18EC2E24009B6C06 /* cmediaserver.h */,
+				E35A2A2C18EC2E24009B6C06 /* cprotocolinfo.h */,
+				E35A2A2D18EC2E24009B6C06 /* cresource.h */,
+				E35A2A2E18EC2E24009B6C06 /* cupnpav.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		E35A2A2618EC2E16009B6C06 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E35A2A2F18EC2E4E009B6C06 /* ccontent_list.c */,
+				E35A2A3018EC2E4E009B6C06 /* ccontent.c */,
+				E35A2A3118EC2E4E009B6C06 /* cdidl.c */,
+				E35A2A3218EC2E4E009B6C06 /* cmd5.c */,
+				E35A2A3318EC2E4E009B6C06 /* cprotocolinfo_list.c */,
+				E35A2A3418EC2E4E009B6C06 /* cprotocolinfo.c */,
+				E35A2A3518EC2E4E009B6C06 /* cresource_data.c */,
+				E35A2A3618EC2E4E009B6C06 /* cresource_list.c */,
+				E35A2A3718EC2E4E009B6C06 /* cresource.c */,
+				E35A2A3818EC2E4E009B6C06 /* renderer */,
+				E35A2A3D18EC2E4E009B6C06 /* server */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		E35A2A3818EC2E4E009B6C06 /* renderer */ = {
+			isa = PBXGroup;
+			children = (
+				E35A2A3918EC2E4E009B6C06 /* cavtransport_service.c */,
+				E35A2A3A18EC2E4E009B6C06 /* cconnectionmgrr_service.c */,
+				E35A2A3B18EC2E4E009B6C06 /* cmediarenderer_device.c */,
+				E35A2A3C18EC2E4E009B6C06 /* crenderingcontrol_service.c */,
+			);
+			name = renderer;
+			path = ../../../../src/cybergarage/upnp/std/av/renderer;
+			sourceTree = "<group>";
+		};
+		E35A2A3D18EC2E4E009B6C06 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				E35A2A3E18EC2E4E009B6C06 /* cconnectionmgr_service.c */,
+				E35A2A3F18EC2E4E009B6C06 /* ccontentdir_service.c */,
+				E35A2A4018EC2E4E009B6C06 /* cmediaserver_device.c */,
+			);
+			name = server;
+			path = ../../../../src/cybergarage/upnp/std/av/server;
+			sourceTree = "<group>";
+		};
+		E35A2A5318EC2F8A009B6C06 /* clinkobjc */ = {
+			isa = PBXGroup;
+			children = (
+				E35A2A5418EC2FBA009B6C06 /* CGUpnpAvConstants.h */,
+				E35A2A5518EC2FBA009B6C06 /* CGUpnpAvContainer.h */,
+				E35A2A5618EC2FBA009B6C06 /* CGUpnpAvContainer.m */,
+				E35A2A5718EC2FBA009B6C06 /* CGUpnpAvContentDirectory.h */,
+				E35A2A5818EC2FBA009B6C06 /* CGUpnpAvContentDirectory.m */,
+				E35A2A5918EC2FBA009B6C06 /* CGUpnpAvContentManager.h */,
+				E35A2A5A18EC2FBA009B6C06 /* CGUpnpAvContentManager.m */,
+				E35A2A5B18EC2FBA009B6C06 /* CGUpnpAvController.h */,
+				E35A2A5C18EC2FBA009B6C06 /* CGUpnpAvController.m */,
+				E35A2A5D18EC2FBA009B6C06 /* CGUpnpAvItem.h */,
+				E35A2A5E18EC2FBA009B6C06 /* CGUpnpAvItem.m */,
+				E35A2A5F18EC2FBA009B6C06 /* CGUpnpAvObject.h */,
+				E35A2A6018EC2FBA009B6C06 /* CGUpnpAvObject.m */,
+				E35A2A6118EC2FBA009B6C06 /* CGUpnpAVPositionInfo.h */,
+				E35A2A6218EC2FBA009B6C06 /* CGUpnpAVPositionInfo.m */,
+				E35A2A6318EC2FBA009B6C06 /* CGUpnpAvRenderer.h */,
+				E35A2A6418EC2FBA009B6C06 /* CGUpnpAvRenderer.m */,
+				E35A2A6518EC2FBA009B6C06 /* CGUpnpAvResource.h */,
+				E35A2A6618EC2FBA009B6C06 /* CGUpnpAvResource.m */,
+				E35A2A6718EC2FBA009B6C06 /* CGUpnpAvRoot.h */,
+				E35A2A6818EC2FBA009B6C06 /* CGUpnpAvRoot.m */,
+				E35A2A6918EC2FBA009B6C06 /* CGUpnpAvServer.h */,
+				E35A2A6A18EC2FBA009B6C06 /* CGUpnpAvServer.m */,
+				E35A2A6B18EC2FBA009B6C06 /* CGXml.h */,
+				E35A2A6C18EC2FBA009B6C06 /* CGXml.m */,
+				E35A2A6D18EC2FBA009B6C06 /* CGXmlNode.h */,
+				E35A2A6E18EC2FBA009B6C06 /* CGXmlNode.m */,
+				E35A2A6F18EC2FBA009B6C06 /* UPnPAV.h */,
+			);
+			name = clinkobjc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E35A29FB18EC2DD9009B6C06 /* clinkav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E35A2A1F18EC2DD9009B6C06 /* Build configuration list for PBXNativeTarget "clinkav" */;
+			buildPhases = (
+				E35A29F818EC2DD9009B6C06 /* Sources */,
+				E35A29F918EC2DD9009B6C06 /* Frameworks */,
+				E35A29FA18EC2DD9009B6C06 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = clinkav;
+			productName = clinkav;
+			productReference = E35A29FC18EC2DD9009B6C06 /* libclinkav.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E35A29F418EC2DD9009B6C06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = CyberLink;
+			};
+			buildConfigurationList = E35A29F718EC2DD9009B6C06 /* Build configuration list for PBXProject "clinkav" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E35A29F318EC2DD9009B6C06;
+			productRefGroup = E35A29FD18EC2DD9009B6C06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E35A29FB18EC2DD9009B6C06 /* clinkav */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E35A29F818EC2DD9009B6C06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E35A2A7718EC2FBA009B6C06 /* CGUpnpAvRenderer.m in Sources */,
+				E35A2A7B18EC2FBA009B6C06 /* CGXml.m in Sources */,
+				E35A2A7C18EC2FBA009B6C06 /* CGXmlNode.m in Sources */,
+				E35A2A7918EC2FBA009B6C06 /* CGUpnpAvRoot.m in Sources */,
+				E35A2A7818EC2FBA009B6C06 /* CGUpnpAvResource.m in Sources */,
+				E35A2A4418EC2E4E009B6C06 /* cmd5.c in Sources */,
+				E35A2A4A18EC2E4E009B6C06 /* cavtransport_service.c in Sources */,
+				E35A2A5018EC2E4E009B6C06 /* cmediaserver_device.c in Sources */,
+				E35A2A7418EC2FBA009B6C06 /* CGUpnpAvItem.m in Sources */,
+				E35A2A4818EC2E4E009B6C06 /* cresource_list.c in Sources */,
+				E35A2A4F18EC2E4E009B6C06 /* ccontentdir_service.c in Sources */,
+				E35A2A7518EC2FBA009B6C06 /* CGUpnpAvObject.m in Sources */,
+				E35A2A7118EC2FBA009B6C06 /* CGUpnpAvContentDirectory.m in Sources */,
+				E35A2A7018EC2FBA009B6C06 /* CGUpnpAvContainer.m in Sources */,
+				E35A2A7A18EC2FBA009B6C06 /* CGUpnpAvServer.m in Sources */,
+				E35A2A4318EC2E4E009B6C06 /* cdidl.c in Sources */,
+				E35A2A4918EC2E4E009B6C06 /* cresource.c in Sources */,
+				E35A2A4B18EC2E4E009B6C06 /* cconnectionmgrr_service.c in Sources */,
+				E35A2A4518EC2E4E009B6C06 /* cprotocolinfo_list.c in Sources */,
+				E35A2A7318EC2FBA009B6C06 /* CGUpnpAvController.m in Sources */,
+				E35A2A4D18EC2E4E009B6C06 /* crenderingcontrol_service.c in Sources */,
+				E35A2A4118EC2E4E009B6C06 /* ccontent_list.c in Sources */,
+				E35A2A4718EC2E4E009B6C06 /* cresource_data.c in Sources */,
+				E35A2A4C18EC2E4E009B6C06 /* cmediarenderer_device.c in Sources */,
+				E35A2A4E18EC2E4E009B6C06 /* cconnectionmgr_service.c in Sources */,
+				E35A2A7218EC2FBA009B6C06 /* CGUpnpAvContentManager.m in Sources */,
+				E35A2A7618EC2FBA009B6C06 /* CGUpnpAVPositionInfo.m in Sources */,
+				E35A2A4218EC2E4E009B6C06 /* ccontent.c in Sources */,
+				E35A2A4618EC2E4E009B6C06 /* cprotocolinfo.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E35A2A1D18EC2DD9009B6C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E35A2A1E18EC2DD9009B6C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E35A2A2018EC2DD9009B6C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/clinkav.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "clinkav/clinkav-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					../../../include,
+					../../../../../include,
+					../../../wrapper/objc,
+					../../../../../wrapper/objc,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E35A2A2118EC2DD9009B6C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/clinkav.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "clinkav/clinkav-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					../../../include,
+					../../../../../include,
+					../../../wrapper/objc,
+					../../../../../wrapper/objc,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E35A29F718EC2DD9009B6C06 /* Build configuration list for PBXProject "clinkav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E35A2A1D18EC2DD9009B6C06 /* Debug */,
+				E35A2A1E18EC2DD9009B6C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E35A2A1F18EC2DD9009B6C06 /* Build configuration list for PBXNativeTarget "clinkav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E35A2A2018EC2DD9009B6C06 /* Debug */,
+				E35A2A2118EC2DD9009B6C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E35A29F418EC2DD9009B6C06 /* Project object */;
+}
