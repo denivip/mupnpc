@@ -32,6 +32,8 @@ typedef void CgUpnpStateVariable;
  * @return The value.
  */
 - (NSString *)value;
+//! Set value without notification.
+- (void)setValue:(NSString *)value;
 
 /**
  * Get an array of the allowed values for the state variable

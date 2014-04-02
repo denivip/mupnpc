@@ -50,6 +50,13 @@
 	return value == NULL ? nil : [[[NSString alloc] initWithUTF8String:value] autorelease];
 }
 
+- (void)setValue:(NSString *)value
+{
+	if (!cObject)
+		return;
+    cg_upnp_statevariable_setvaluewithoutnotify(cObject, [value cStringUsingEncoding:NSUTF8StringEncoding]);
+}
+
 - (NSArray *)allowedValues
 {
 	if (!cObject)
