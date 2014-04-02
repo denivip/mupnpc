@@ -10,8 +10,15 @@
 #include <cybergarage/upnp/control/ccontrol.h>
 #import "CGUpnpControlPoint.h"
 #import "CGUpnpDevice.h"
+#import "CGUpnpService.h"
+
+NSString *const CGUpnpControlPointEventNotification = @"CGUpnpControlPointEventNotification";
+NSString *const CGUpnpControlPointEventNameKey = @"CGUpnpControlPointEventNameKey";
+NSString *const CGUpnpControlPointEventValueKey = @"CGUpnpControlPointEventValueKey";
+NSString *const CGUpnpControlPointEventSIDKey = @"CGUpnpControlPointEventSIDKey";
 
 static void CGUpnpControlPointDeviceListener(CgUpnpControlPoint *ctrlPoint, const char* udn, CgUpnpDeviceStatus status);
+static void CGUpnpControlPointEventListener(CgUpnpProperty *prop);
 
 @implementation CGUpnpControlPoint
 
@@ -25,6 +32,7 @@ static void CGUpnpControlPointDeviceListener(CgUpnpControlPoint *ctrlPoint, cons
 	cObject = cg_upnp_controlpoint_new();
 	if (cObject) {
 		cg_upnp_controlpoint_setdevicelistener(cObject, CGUpnpControlPointDeviceListener);
+        cg_upnp_controlpoint_seteventlistener(cObject, CGUpnpControlPointEventListener);
 		cg_upnp_controlpoint_setuserdata(cObject, self);
 		if (![self start])
 			self = nil;
@@ -119,6 +127,20 @@ static void CGUpnpControlPointDeviceListener(CgUpnpControlPoint *ctrlPoint, cons
 	return nil;
 }
 
+- (BOOL)subscribeToService:(CGUpnpService *)service
+{
+    if (!cObject)
+        return NO;
+    return cg_upnp_controlpoint_subscribe(cObject, service.cObject, 60);
+}
+
+- (BOOL)unsubscribeFromService:(CGUpnpService *)service
+{
+    if (!cObject)
+        return NO;
+    return cg_upnp_controlpoint_unsubscribe(cObject, service.cObject);
+}
+
 @end
 
 static void CGUpnpControlPointDeviceListener(CgUpnpControlPoint *cCtrlPoint, const char* udn, CgUpnpDeviceStatus status)
@@ -168,3 +190,14 @@ static void CGUpnpControlPointDeviceListener(CgUpnpControlPoint *cCtrlPoint, con
     [pool drain];
 }
 
+static void CGUpnpControlPointEventListener(CgUpnpProperty *prop)
+{
+    NSString *name = [NSString stringWithCString:cg_upnp_property_getname(prop) encoding:NSASCIIStringEncoding];
+    NSString *value = [NSString stringWithCString:cg_upnp_property_getvalue(prop) encoding:NSASCIIStringEncoding];
+    NSString *sid = [NSString stringWithCString:cg_upnp_property_getsid(prop) encoding:NSASCIIStringEncoding];
+
+    NSDictionary *userInfo = @{ CGUpnpControlPointEventNameKey : name,
+                                CGUpnpControlPointEventValueKey : value,
+                                CGUpnpControlPointEventSIDKey : sid };
+    [[NSNotificationCenter defaultCenter] postNotificationName:CGUpnpControlPointEventNotification object:nil userInfo:userInfo];
+}

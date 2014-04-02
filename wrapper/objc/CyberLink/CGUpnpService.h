@@ -85,4 +85,9 @@ typedef void CgUpnpService;
  */
 - (BOOL)isStateVariableImpemented:(NSString*)name;
 
+/**
+ *
+ */
+- (NSString *)subscriptionId;
+
 @end

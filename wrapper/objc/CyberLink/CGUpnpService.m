@@ -117,4 +117,15 @@
 	return NO;
 }
 
+- (NSString *)subscriptionId
+{
+	if (!cObject)
+		return nil;
+    char *sid = cg_upnp_service_getsubscriptionsid(cObject);
+    if (sid == NULL)
+        return nil;
+    else
+        return [NSString stringWithCString:sid encoding:NSASCIIStringEncoding];
+}
+
 @end

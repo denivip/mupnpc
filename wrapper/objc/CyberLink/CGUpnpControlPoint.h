@@ -13,8 +13,26 @@
 typedef void CgUpnpControlPoint;
 #endif
 
+/**
+ *
+ */
+extern NSString *const CGUpnpControlPointEventNotification;
+/**
+ *
+ */
+extern NSString *const CGUpnpControlPointEventNameKey;
+/**
+ *
+ */
+extern NSString *const CGUpnpControlPointEventValueKey;
+/**
+ *
+ */
+extern NSString *const CGUpnpControlPointEventSIDKey;
+
 @class CGUpnpDevice;
 @class CGUpnpControlPoint;
+@class CGUpnpService;
 
 @protocol CGUpnpControlPointDelegate <NSObject>
 @optional
@@ -95,4 +113,12 @@ typedef void CgUpnpControlPoint;
  * @return CGUpnpDevice when the specified device is found, otherwise nil.
  */
 - (CGUpnpDevice *)deviceForUDN:(NSString *)udn;
+/**
+ *
+ */
+- (BOOL)subscribeToService:(CGUpnpService *)service;
+/**
+ *
+ */
+- (BOOL)unsubscribeFromService:(CGUpnpService *)service;
 @end
