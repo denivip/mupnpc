@@ -86,7 +86,12 @@ static BOOL CGUpnpActionListener(CgUpnpAction *cAction)
 	cArg = cg_upnp_action_getargumentbyname(cObject, (char *)[name UTF8String]);
 	if (!cArg)
 		return NO;
-	cg_upnp_argument_setvalue(cArg, (char *)[value UTF8String]);
+    NSUInteger cvaluelength = [value lengthOfBytesUsingEncoding:NSUTF8StringEncoding] + 1;
+    char *cvalue = malloc(cvaluelength);
+    if (! [value getCString:cvalue maxLength:cvaluelength encoding:NSUTF8StringEncoding])
+        return NO;
+	cg_upnp_argument_setvalue(cArg, cvalue);
+    free(cvalue);
 	return YES;
 }
 
