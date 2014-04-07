@@ -121,4 +121,11 @@ extern NSString *const CGUpnpControlPointEventSIDKey;
  *
  */
 - (BOOL)unsubscribeFromService:(CGUpnpService *)service;
+/**
+ * Performs operations on control point with locking.
+ *
+ * This should be used even without multithreading because the library has
+ * multithreaded code internally which modifies data.
+ */
+- (void)performBlock:(void (^)(void))block;
 @end

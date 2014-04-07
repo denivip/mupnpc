@@ -141,6 +141,23 @@ static void CGUpnpControlPointEventListener(CgUpnpProperty *prop);
     return cg_upnp_controlpoint_unsubscribe(cObject, service.cObject);
 }
 
+- (void)performBlock:(void (^)(void))block
+{
+    if (!cObject)
+        return;
+    if (! cg_upnp_controlpoint_lock(cObject))
+        return;
+    @try {
+        block();
+    }
+    @catch (NSException *exception) {
+        @throw;
+    }
+    @finally {
+        cg_upnp_controlpoint_unlock(cObject);
+    }
+}
+
 @end
 
 static void CGUpnpControlPointDeviceListener(CgUpnpControlPoint *cCtrlPoint, const char* udn, CgUpnpDeviceStatus status)
