@@ -216,5 +216,7 @@ static void CGUpnpControlPointEventListener(CgUpnpProperty *prop)
     NSDictionary *userInfo = @{ CGUpnpControlPointEventNameKey : name,
                                 CGUpnpControlPointEventValueKey : value,
                                 CGUpnpControlPointEventSIDKey : sid };
-    [[NSNotificationCenter defaultCenter] postNotificationName:CGUpnpControlPointEventNotification object:nil userInfo:userInfo];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:CGUpnpControlPointEventNotification object:nil userInfo:userInfo];
+    });
 }
